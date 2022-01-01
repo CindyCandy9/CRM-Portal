@@ -9,3 +9,17 @@
         </a>
     </div>
 </div>
+<div class="flex flex-col my-4">
+  <?php if(session()->getFlashdata('ResponseMessageSuccess') !== NULL) : ?>
+  <div class="flex my-2 pb-2 mx-4">
+    <div class="bg-green-100 text-green-900 w-full py-2 px-2 rounded"><?= $_SESSION['ResponseMessageSuccess'] ?></div>
+  </div>
+  <?php elseif (session()->getFlashdata('ResponseMessageError') !== NULL) : ?>
+  <div class="flex my-2 pb-2 mx-4">
+    <div class="bg-red-100 text-red-900 w-full py-2 px-2 rounded"><?= $_SESSION['ResponseMessageError'] ?></div>
+  </div>
+  <?php endif ?>
+  <div class="flex items-baseline my-2 pb-2 mx-4">
+    <label class="text-lg text-gray-500">All Leads</label> <label class="text-sm text-gray-400 ml-2">(Descending)</label>
+  </div>
+</div>

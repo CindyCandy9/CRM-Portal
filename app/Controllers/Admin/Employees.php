@@ -97,6 +97,7 @@ class Employees extends BaseController
         $fullname = $this->request->getVar('user_fullname');
         $email = $this->request->getVar('user_email');
         $password = $this->request->getVar('user_password');
+        $confirm_password = $this->request->getVar('user_confirm_password');
         $gender = $this->request->getVar('user_gender');
         $location = $this->request->getVar('user_location');
         $department = $this->request->getVar('user_department');
@@ -111,6 +112,10 @@ class Employees extends BaseController
         $data = array();
 
         if($password != NULL) {
+            if ($password != $confirm_password) {
+                session()->setFlashdata('ResponseMessageError', 'Passwords do not match. Please confirm you are typing the same password.');
+                return redirect()->to(site_url('admin/employees/edit/' . $id));
+            }
             $data = array (
                 "user_fullname" => $fullname,
                 "user_email" => $email,
