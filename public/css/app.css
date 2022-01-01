@@ -380,11 +380,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-
-* {
-  scrollbar-color: initial;
-  scrollbar-width: initial;
-}
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 229 229 / var(--tw-border-opacity));
@@ -472,9 +467,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.-my-2 {
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -595,8 +590,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-solid {
   border-style: solid;
@@ -704,6 +705,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-left {
   text-align: left;
@@ -837,6 +841,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -847,77 +861,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.scrollbar {
-  --scrollbar-track: initial;
-  --scrollbar-thumb: initial;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-  overflow: overlay;
-}
-.scrollbar.overflow-x-hidden {
-  overflow-x: hidden;
-}
-.scrollbar.overflow-y-hidden {
-  overflow-y: hidden;
-}
-.scrollbar::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track);
-}
-.scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
-}
-.scrollbar {
-  scrollbar-width: auto;
-}
-.scrollbar::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-}
-.scrollbar-thin {
-  --scrollbar-track: initial;
-  --scrollbar-thumb: initial;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-  overflow: overlay;
-}
-.scrollbar-thin.overflow-x-hidden {
-  overflow-x: hidden;
-}
-.scrollbar-thin.overflow-y-hidden {
-  overflow-y: hidden;
-}
-.scrollbar-thin::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track);
-}
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
-}
-.scrollbar-thin {
-  scrollbar-width: thin;
-}
-.scrollbar-thin::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.scrollbar-track-background-top {
-  --scrollbar-track: #32394C !important;
-}
-.scrollbar-thumb-background-top {
-  --scrollbar-thumb: #32394C !important;
-}
-.scrollbar-track-gray-\31 00 {
-  --scrollbar-track: #f5f5f5 !important;
-}
-.scrollbar-thumb-gray-\31 00 {
-  --scrollbar-thumb: #f5f5f5 !important;
-}
-.scrollbar-thumb-gray-\32 00 {
-  --scrollbar-thumb: #e5e5e5 !important;
-}
-.scrollbar-thumb-gray-\39 00 {
-  --scrollbar-thumb: #171717 !important;
-}
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
