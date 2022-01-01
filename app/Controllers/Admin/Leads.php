@@ -4,9 +4,13 @@ namespace App\Controllers\Admin;
 
 class Leads extends BaseController
 {
+    public function __construct() {
+        $this->activeLinkPage = 'leads';
+    }
     public function Render($pageTitle = null, $page = null, $data = null) {
         $header = [
             'subTitle' => $pageTitle,
+            'activePage' => $this->activeLinkPage,
         ];
 
         $layout = [

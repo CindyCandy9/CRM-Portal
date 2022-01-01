@@ -7,11 +7,13 @@ class Employees extends BaseController
 {
     public function __construct() {
         $this->EmployeesModel = new \App\Models\EmployeesModel();
+        $this->activeLinkPage = 'employees';
     }
 
     public function Render($pageTitle = null, $page = null, $data = null) {
         $header = [
             'subTitle' => $pageTitle,
+            'activePage' => $this->activeLinkPage,
         ];
 
         $layout = [

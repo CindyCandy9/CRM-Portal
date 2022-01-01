@@ -4,9 +4,13 @@ namespace App\Controllers\Admin;
 
 class Dashboard extends BaseController
 {
+    public function __construct() {
+        $this->activeLinkPage = 'main';
+    }
     public function Render($pageTitle = null, $page = null, $data = null) {
         $header = [
             'subTitle' => $pageTitle,
+            'activePage' => $this->activeLinkPage,
         ];
 
         $layout = [
