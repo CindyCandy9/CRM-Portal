@@ -9,7 +9,7 @@
 	<link href="<?= base_url("css/app.css?v=1.0.0") ?>" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-background-top">
+<body>
     <header class="flex h-12 items-center bg-background-top text-white">
         <div class="mx-4">
             <a href="/admin/" class="font-semibold text-2xl">CRM Portal</a>
