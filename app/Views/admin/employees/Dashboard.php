@@ -17,13 +17,13 @@
     <div class="bg-red-100 text-red-900 w-full py-2 px-2 rounded"><?= $_SESSION['ResponseMessageError'] ?></div>
   </div>
   <?php endif ?>
-  <div class="flex my-2 pb-2 mx-4">
-    <label class="text-lg text-gray-500">All Employees</label>
+  <div class="flex items-baseline my-2 pb-2 mx-4">
+    <label class="text-lg text-gray-500">All Employees</label> <label class="text-sm text-gray-400 ml-2">(Descending)</label>
   </div>
   <div class="overflow-x-auto mx-4">
     <div class="align-middle inline-block min-w-full">
       <div class="overflow-hidden">
-        <table class="min-w-full divide-y divide-gray-200">
+        <table class="min-w-full divide-y divide-gray-100">
           <thead>
             <tr>
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -46,9 +46,9 @@
               </th>
             </tr>
           </thead>
-          <tbody class="bg-white divide-y divide-gray-200">
+          <tbody class="bg-white">
             <?php foreach($data as $user): ?>
-            <tr>
+            <tr class="even:bg-gray-50">
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="flex items-center">
                   <div class="">
@@ -110,9 +110,9 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-between items-center pt-8 pb-8 mx-4 border-t border-gray-200">
+  <div class="flex justify-between items-center pt-8 pb-8 mx-4 border-t-2 border-gray-100">
     <div class="text-sm text-gray-600">
-      Showing <span class="font-semibold">1</span> to <span class="font-semibold">10</span> of <span class="font-semibold">29</span> results.
+      Showing <span class="font-semibold">1</span> to <span class="font-semibold">10</span> of <span class="font-semibold">29</span> results
     </div>
     <div class="font-semibold text-sm text-gray-600">
       <a href="#" class="border rounded-md shadow-sm hover:bg-gray-50 py-2 px-4 mx-2">Previous</a>
