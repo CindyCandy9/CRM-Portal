@@ -5,6 +5,7 @@ namespace App\Controllers\Admin;
 class Leads extends BaseController
 {
     public function __construct() {
+        $this->LeadsModel = new \App\Models\LeadsModel();
         $this->activeLinkPage = 'leads';
     }
     public function Render($pageTitle = null, $page = null, $data = null) {
@@ -23,8 +24,10 @@ class Leads extends BaseController
         echo view('admin/common/Footer', []);
     }
 
-    public function Index()
+    public function Index($page = 0)
     {
-        return $this->Render('Leads', 'admin/leads/Dashboard');
+        $perPage = 10; $offset = $page * $perPage; 
+        $data = $this->LeadsModel->FetchLeads(NULL, $perPage, $offset);
+        return $this->Render('Leads', 'admin/leads/Dashboard', $data);
     }
 }
