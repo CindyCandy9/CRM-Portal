@@ -14,6 +14,9 @@ class LeadsModel extends Model {
     {
         $this->db = \Config\Database::connect();
         $this->leads = $this->db->table('lead_assignments');
+        $this->projects = $this->db->table('projects');
+        $this->users = $this->db->table('users');
+        $this->statuses = $this->db->table('lead_statuses');
     }
 
     public function FetchLeads($id = NULL, $perPage = null, $offset = null) {
@@ -28,5 +31,18 @@ class LeadsModel extends Model {
         return $result->getResultArray();
     }
 
+    public function FetchProjects() {
+        $result = $this->projects->select('*')->get();
+        return $result->getResultArray();
+    }
 
+    public function FetchUsers() {
+        $result = $this->users->select('users.user_id, users.user_fullname')->get();
+        return $result->getResultArray();
+    }
+
+    public function FetchStatuses() {
+        $result = $this->statuses->select('lead_statuses.lead_status_id, lead_statuses.lead_status_name')->get();
+        return $result->getResultArray();
+    }
 }

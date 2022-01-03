@@ -49,6 +49,7 @@ $routes->post('/admin/employees/edit/(:num)', 'Admin\Employees::UpdateEmployee/$
 
 // Administrator Leads Routes (GET) 
 $routes->get('/admin/leads', 'Admin\Leads::Index',['filter' => 'auth']);
+$routes->get('/admin/leads/add', 'Admin\Leads::AddLead',['filter' => 'auth']);
 
 /*
  * --------------------------------------------------------------------

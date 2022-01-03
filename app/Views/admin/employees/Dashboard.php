@@ -100,7 +100,6 @@
                 <?php endif ?>
                 <a href="<?= $user['user_status'] == 1 ? base_url('admin/employees/disable/' . $user['user_id']) : base_url('admin/employees/enable/' . $user['user_id']) ?>"
                   class="<?= $user['user_status'] == 1 ? 'text-red-600 hover:text-red-900' : 'text-gray-500 hover:text-gray-900' ?>"><?= $user['user_status'] == 1 ? 'Disable' : 'Enable' ?></a>
-
               </td>
             </tr>
             <?php endforeach ?>

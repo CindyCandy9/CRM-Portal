@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
 	<link href="<?= base_url("css/app.css?v=1.0.0") ?>" rel="stylesheet">
+    <script src="<?= base_url("js/app.js") ?>"></script>
 </head>
 <body>
     <nav class="bg-gray-800">

@@ -30,4 +30,11 @@ class Leads extends BaseController
         $data = $this->LeadsModel->FetchLeads(NULL, $perPage, $offset);
         return $this->Render('Leads', 'admin/leads/Dashboard', $data);
     }
+
+    public function AddLead() {
+        $data[0] = $this->LeadsModel->FetchProjects();
+        $data[1] = $this->LeadsModel->FetchUsers();
+        $data[2] = $this->LeadsModel->FetchStatuses();
+        return $this->Render('Add Lead', 'admin/leads/AddLead', $data);
+    }
 }
