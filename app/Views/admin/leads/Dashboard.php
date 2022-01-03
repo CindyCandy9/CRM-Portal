@@ -85,10 +85,6 @@
                   <?= $lead['lead_status_name'] ?>
                 </span>
               </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                <a href="<?= base_url('admin/leads/edit/' . $lead['lead_id']) ?>"
-                  class="text-gray-600 hover:text-gray-900 mr-2">Edit</a>
-              </td>
             </tr>
             <?php endforeach ?>
           </tbody>
