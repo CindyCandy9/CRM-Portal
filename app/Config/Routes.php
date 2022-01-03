@@ -51,6 +51,9 @@ $routes->post('/admin/employees/edit/(:num)', 'Admin\Employees::UpdateEmployee/$
 $routes->get('/admin/leads', 'Admin\Leads::Index',['filter' => 'auth']);
 $routes->get('/admin/leads/add', 'Admin\Leads::AddLead',['filter' => 'auth']);
 
+// Administrator Leads Routes (POST) 
+$routes->post('/admin/leads/add', 'Admin\Leads::InsertLead',['filter' => 'auth']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
