@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Login::index');
 
 $routes->add('/admin', 'Admin\Dashboard::Index',['filter' => 'auth']);
+$routes->add('/user', 'User\Dashboard::Index',['filter' => 'auth']);
 
 // Administrator Employees Routes (GET)
 $routes->get('/admin/employees', 'Admin\Employees::Index',['filter' => 'auth']);
