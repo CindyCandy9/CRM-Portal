@@ -37,7 +37,7 @@ class LeadsModel extends Model {
     }
 
     public function FetchUsers() {
-        $result = $this->users->select('users.user_id, users.user_fullname')->get();
+        $result = $this->users->select('users.user_id, users.user_fullname')->where('users.user_status', 1)->get();
         return $result->getResultArray();
     }
 
