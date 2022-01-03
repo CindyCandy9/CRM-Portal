@@ -28,16 +28,22 @@ class Login extends Controller
                     'user_id'       => $data['user_id'],
                     'user_name'     => $data['user_fullname'],
                     'user_email'    => $data['user_email'],
+                    'user_role'    => $data['user_user_role_id'],
                     'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/admin');
+                if ($data['user_user_role_id'] == 1) {
+                    return redirect()->to('/admin');
+                } else {
+                    return redirect()->to('/user');
+                }
+                
             }else{
-                $session->setFlashdata('msg', 'Email or Password is incorrect. Please try again.');
+                $session->setFlashdata('ResponseMessageError', 'Email or Password is incorrect. Please try again.');
                 return redirect()->to('/');
             }
         }else{
-            $session->setFlashdata('msg', 'Email or Password is incorrect. Please try again.');
+            $session->setFlashdata('ResponseMessageError', 'Email or Password is incorrect. Please try again.');
             return redirect()->to('/');
         }
     }

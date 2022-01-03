@@ -26,45 +26,27 @@
         <div class="flex flex-col md:flex-row justify-between">
         <div class="md:w-1/2 md:mr-8">
                 <div class="my-4">
-                    <div class="mr-4 pb-1 md:w-1/2"><label for="Client Name" class="text-sm">Client Name <span class="text-red-500">*</span></label></div>
-                    <input type="text" name="client_name" required placeholder="Enter Client Name" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500"></input>
+                    <div class="mr-4 pb-1 md:w-1/2"><label for="Client Name" class="text-sm">Client Name</label></div>
+                    <input type="text" name="client_name" placeholder="Enter Client Name" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500"></input>
                 </div>
                 <div class="my-4">
                     <div class="mr-4 pb-1 md:w-1/2"><label for="Phone" class="text-sm">Client Phone <span class="text-red-500">*</span></label></div>
-                    <input type="email" name="client_phone" required placeholder="Enter Phone" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500"></input>
-                </div>
-                <div class="my-4">
-                    <div class="mr-4 pb-1 md:w-1/2"><label for="Lead Date" class="text-sm">Lead Date <span class="text-red-500">*</span></label></div>
-                    <div class="relative">
-                        <input type="date" name="lead_date" required placeholder="Select Date" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500">
-                    </div>
+                    <input type="text" name="client_phone" required placeholder="Enter Phone" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500"></input>
                 </div>
             </div>
             <div class="md:w-1/2 md:mr-8">
+                <div class="my-4">
+                    <div class="mr-4 pb-1 md:w-1/2"><label for="Lead Date" class="text-sm">Lead Date <span class="text-red-500">*</span></label></div>
+                    <div class="relative">
+                        <input type="datetime-local" name="lead_date" required placeholder="Select Date" class="border rounded px-2 py-2 w-full focus:outline-none focus:bg-white focus:border-blue-500">
+                    </div>
+                </div>
                 <div class="my-4">
                     <div class="mr-4 pb-1 md:w-1/2"><label for="Project" class="text-sm">Project <span class="text-red-500">*</span></label></div>
                     <select name="project_id" required class="form-select appearance-none block w-full px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:outline-none focus:bg-white focus:border-blue-500" aria-label="Default select example">
                         <option selected disabled value="">Select Project</option>
                         <?php foreach($data[0] as $project) : ?>
                         <option value="<?= $project["project_id"] ?>"><?= $project["project_name"] ?></option>
-                        <?php endforeach ?>
-                    </select>
-                </div>
-                <div class="my-4">
-                    <div class="mr-4 pb-1 md:w-1/2"><label for="Employee" class="text-sm">Employee</label></div>
-                    <select name="employee_id" class="form-select appearance-none block w-full px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:outline-none focus:bg-white focus:border-blue-500" aria-label="Default select example">
-                        <option selected disabled value="">Select Employee</option>
-                        <?php foreach($data[1] as $user) : ?>
-                        <option value="<?= $user["user_id"] ?>"><?= $user["user_fullname"] ?></option>
-                        <?php endforeach ?>
-                    </select>
-                </div>
-                <div class="my-4">
-                    <div class="mr-4 pb-1 md:w-1/2"><label for="Status" class="text-sm">Status <span class="text-red-500">*</span></label></div>
-                    <select name="status_id" required class="form-select appearance-none block w-full px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:outline-none focus:bg-white focus:border-blue-500" aria-label="Default select example">
-                        <option selected disabled value="">Select Status</option>
-                        <?php foreach($data[2] as $status) : ?>
-                        <option value="<?= $status["lead_status_id"] ?>"><?= $status["lead_status_name"] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
