@@ -1287,6 +1287,10 @@ select {
     margin-right: 2rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:inline-flex {
     display: inline-flex;
   }
@@ -1297,6 +1301,10 @@ select {
 
   .md\:w-8 {
     width: 2rem;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
   }
 
   .md\:flex-row {

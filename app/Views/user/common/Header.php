@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="flex">
-        <nav class="flex flex-col justify-between h-full min-h-screen w-56 border-r border-gray-200">
+        <nav class="hidden md:flex flex-col justify-between h-full min-h-screen w-0 md:w-56 border-r border-gray-200 transition-all">
             <div class="flex flex-col">
                 <div class="flex justify-center w-full items-center h-16">
                     <span class="text-2xl font-semibold my-4 mx-4">CRM Portal</span>

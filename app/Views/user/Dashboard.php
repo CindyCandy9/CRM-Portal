@@ -1,5 +1,5 @@
 
-<div class="flex flex-col w-full">
+<div class="flex flex-col w-full transition-all">
     <div class="flex justify-between w-full items-center h-16">
         <div class="flex items-center w-full mr-4">
             <i class="fas fa-search text-gray-400 ml-4"></i>
