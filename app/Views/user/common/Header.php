@@ -12,19 +12,19 @@
 </head>
 <body>
     <div class="flex">
-        <nav class="hidden md:flex flex-col justify-between h-full min-h-screen w-0 md:w-56 border-r border-gray-200 transition-all">
+        <nav class="hidden md:flex flex-col justify-between h-screen sticky top-0 w-0 md:w-56 border-r border-gray-200 transition-all">
             <div class="flex flex-col">
                 <div class="flex justify-center w-full items-center h-16">
                     <span class="text-2xl font-semibold my-4 mx-4">CRM Portal</span>
                 </div>
                 <div class="flex w-full justify-center items-center">
-                    <a href="<?= base_url("user") ?>" class="w-full mx-4 <?= $activePage == 'main' ? 'flex bg-gray-100 text-blueGray-900 px-3 py-2 rounded-md text-sm font-semibold my-1 transition-all ease-in-out' : 'flex px-3 py-2 rounded-md text-sm text-blueGray-600 font-semibold my-1 hover:bg-blueGray-50 transition-all ease-in-out' ?>" aria-current="page">
-                        <i class="fas fa-home text-blueGray-500 w-8 text-xl"></i> Dashboard
+                    <a href="<?= base_url("user") ?>" class="w-full mx-4 <?= $activePage == 'main' ? 'flex items-center bg-gray-100 text-blueGray-900 px-3 py-2 rounded-md text-sm font-semibold my-1 transition-all ease-in-out' : 'flex items-center px-3 py-2 rounded-md text-sm text-blueGray-600 font-semibold my-1 hover:bg-blueGray-50 transition-all ease-in-out' ?>" aria-current="page">
+                        <i class="fas fa-home text-gray-500 w-6 text-sm"></i> Dashboard
                     </a>
                 </div>
                 <div class="flex w-full justify-center items-center">
-                    <a href="<?= base_url("user/leads") ?>" class="w-full mx-4 <?= $activePage == 'leads' ? 'flex bg-gray-100 text-blueGray-900 px-3 py-2 rounded-md text-sm font-semibold my-1 transition-all ease-in-out' : 'flex px-3 py-2 rounded-md text-sm text-blueGray-600 font-semibold my-1 hover:bg-blueGray-50 transition-all ease-in-out' ?>" aria-current="page">
-                        <i class="fas fa-phone text-blueGray-500 w-8 text-xl"></i> Leads
+                    <a href="<?= base_url("user/leads") ?>" class="w-full mx-4 <?= $activePage == 'leads' ? 'flex items-center bg-gray-100 text-blueGray-900 px-3 py-2 rounded-md text-sm font-semibold my-1 transition-all ease-in-out' : 'flex items-center px-3 py-2 rounded-md text-sm text-blueGray-600 font-semibold my-1 hover:bg-blueGray-50 transition-all ease-in-out' ?>" aria-current="page">
+                        <i class="fas fa-phone text-gray-500 w-6 text-sm"></i> Leads <span class="text-xs py-1 px-2 mx-2 bg-green-50 text-green-800 rounded-lg">82</span>
                     </a>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-sm font-semibold">Dawood Khan</span>
-                        <a href="#" class="text-xs font-medium text-gray-500">View Profile</a>
+                        <a href="<?= base_url('/login/logout') ?>" class="text-xs font-medium text-gray-500">Logout</a>
                     </div>
                 </div>
             </div>

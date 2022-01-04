@@ -13,6 +13,7 @@ module.exports = {
     colors: {
       background: {
         top: '#32394C',
+        secondary: '#fcfcfc',
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -31,5 +32,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('tailwind-scrollbar'),
   ],
 }
