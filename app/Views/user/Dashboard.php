@@ -6,7 +6,7 @@
             <input class="w-full px-2 py-4 h-full outline-none dark:bg-background-darkPrimary dark:text-white transition-all" placeholder="Search..."></input>
         </div>
         <div class="px-4 py-4 cursor-pointer">
-            <button id="theme-toggle" type="button" class="text-gray-500 dark:text-blueGray-400 hover:bg-gray-100 dark:hover:bg-blueGray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-blueGray-800 rounded-lg text-sm p-2.5 transition-all">
+            <button id="theme-toggle" type="button" class="text-gray-500 dark:text-blueGray-400 hover:bg-gray-100 dark:hover:bg-blueGray-700 focus:outline-none rounded-lg text-sm p-2.5 transition-all">
                 <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 transition-all" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
                 <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 transition-all" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
             </button>
@@ -22,7 +22,7 @@
                     <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
                         Pending Leads
                     </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-yellow-50 dark:bg-background-darkPrimary text-yellow-900 dark:text-white rounded-lg w-min transition-all">
+                    <span class="my-1 px-2 text-sm lg:text-xl bg-yellow-50 dark:bg-background-hoverPrimary text-yellow-900 dark:text-white rounded-lg w-min transition-all">
                         4
                     </span>
                 </div>
@@ -35,7 +35,7 @@
                     <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
                         New Leads
                     </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-green-50 dark:bg-background-darkPrimary text-green-900 dark:text-white rounded-lg w-min transition-all">
+                    <span class="my-1 px-2 text-sm lg:text-xl bg-green-50 dark:bg-background-hoverPrimary text-green-900 dark:text-white rounded-lg w-min transition-all">
                         2
                     </span>
                 </div>
@@ -50,7 +50,7 @@
                     <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
                         Converted Leads
                     </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-blue-50 dark:bg-background-darkPrimary text-blue-900 dark:text-white rounded-lg w-min transition-all">
+                    <span class="my-1 px-2 text-sm lg:text-xl bg-blue-50 dark:bg-background-hoverPrimary text-blue-900 dark:text-white rounded-lg w-min transition-all">
                         0
                     </span>
                 </div>
@@ -63,7 +63,7 @@
                     <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
                         Total Leads
                     </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-gray-100 dark:bg-background-darkPrimary text-gray-900 dark:text-white rounded-lg w-min transition-all">
+                    <span class="my-1 px-2 text-sm lg:text-xl bg-gray-100 dark:bg-background-hoverPrimary text-gray-900 dark:text-white rounded-lg w-min transition-all">
                         6
                     </span>
                 </div>
