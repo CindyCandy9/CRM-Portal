@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/Views/**/*.php",
     "./app/Views/**/**/*.php",
@@ -14,6 +15,12 @@ module.exports = {
       background: {
         top: '#32394C',
         secondary: '#fcfcfc',
+        darkPrimary: '#0F172A',
+        darkSecondary: '#1E293B',
+        hoverPrimary: '#17202e',
+      },
+      border: {
+        darkPrimary: '#0F172A',
       },
       transparent: 'transparent',
       current: 'currentColor',
