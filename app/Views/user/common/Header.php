@@ -24,7 +24,7 @@
                 </div>
                 <div class="flex w-full justify-center items-center">
                     <a href="<?= base_url("user/leads") ?>" class="w-full mx-4 <?= $activePage == 'leads' ? 'flex items-center bg-gray-100 dark:bg-background-darkSecondary text-blueGray-900 hover:text-gray-900 dark:text-blueGray-300 px-3 py-2 rounded-md text-sm font-semibold my-1 transition-all' : 'flex items-center px-3 py-2 rounded-md text-sm text-blueGray-500 hover:text-gray-900 dark:text-blueGray-500 font-semibold my-1 hover:bg-gray-50 dark:hover:text-gray-200 hover:dark:bg-background-darkSecondary transition-all' ?>" aria-current="page">
-                        <i class="fas fa-phone dark:text-blueGray-300 w-6 text-sm"></i> Leads <span class="text-xs py-1 px-2 mx-2 bg-green-50 dark:bg-background-darkSecondary text-green-800 dark:text-green-500 rounded-lg transition-all">82</span>
+                        <i class="fas fa-phone dark:text-blueGray-300 w-6 text-sm"></i> Leads <span class="text-xs py-1 px-2 mx-2 bg-green-50 dark:bg-background-darkSecondary text-green-800 dark:text-green-600 rounded-lg transition-all"><?= $data[0]["total_new_leads"] ?></span>
                     </a>
                 </div>
                 <div class="flex w-full justify-center items-center">

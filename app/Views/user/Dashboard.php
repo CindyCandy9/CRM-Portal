@@ -12,66 +12,62 @@
             </button>
         </div>
     </div>
-    <div class="flex flex-col lg:flex-row justify-between mt-4 w-full px-4 mb-4">
-        <div class="flex lg:w-full mr-0 lg:mr-2 mb-4 lg:mb-0">
-            <div class="flex items-center shadow-sm rounded-xl px-4 py-4 mr-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
-                <div class="flex mr-4 h-full items-center">
-                    <i class="fas fa-headphones text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
-                        Pending Leads
-                    </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-yellow-50 dark:bg-background-hoverPrimary text-yellow-900 dark:text-white rounded-lg w-min transition-all">
-                        4
-                    </span>
-                </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-4 mx-4">
+        <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
+            <div class="flex mr-4 h-full items-center">
+                <i class="fas fa-bell text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
             </div>
-            <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
-                <div class="flex mr-4 h-full items-center">
-                    <i class="fas fa-bell text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
-                        New Leads
-                    </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-green-50 dark:bg-background-hoverPrimary text-green-900 dark:text-white rounded-lg w-min transition-all">
-                        2
-                    </span>
-                </div>
+            <div class="flex flex-col">
+                <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
+                    New Leads
+                </span>
+                <span class="my-1 px-2 text-sm lg:text-xl bg-green-50 dark:bg-background-hoverPrimary text-green-900 dark:text-white rounded-lg w-min transition-all">
+                    <?= $data[0][0]["total_new_leads"] ?>
+                </span>
             </div>
         </div>
-        <div class="flex lg:w-full mr-0 lg:ml-2">
-            <div class="flex items-center shadow-sm rounded-xl px-4 py-4 mr-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
-                <div class="flex mr-4 h-full items-center">
-                    <i class="far fa-credit-card text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
-                        Converted Leads
-                    </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-blue-50 dark:bg-background-hoverPrimary text-blue-900 dark:text-white rounded-lg w-min transition-all">
-                        0
-                    </span>
-                </div>
+        <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
+            <div class="flex mr-4 h-full items-center">
+                <i class="fas fa-headphones text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
             </div>
-            <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
-                <div class="flex mr-4 h-full items-center">
-                    <i class="fas fa-sitemap text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
-                        Total Leads
-                    </span>
-                    <span class="my-1 px-2 text-sm lg:text-xl bg-gray-100 dark:bg-background-hoverPrimary text-gray-900 dark:text-white rounded-lg w-min transition-all">
-                        6
-                    </span>
-                </div>
+            <div class="flex flex-col">
+                <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
+                    Follow Ups
+                </span>
+                <span class="my-1 px-2 text-sm lg:text-xl bg-yellow-50 dark:bg-background-hoverPrimary text-yellow-900 dark:text-white rounded-lg w-min transition-all">
+                    <?= $data[1][0]["total_pending_leads"] ?>
+                </span>
+            </div>
+        </div>
+        <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
+            <div class="flex mr-4 h-full items-center">
+                <i class="far fa-credit-card text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
+                    Converted Leads
+                </span>
+                <span class="my-1 px-2 text-sm lg:text-xl bg-blue-50 dark:bg-background-hoverPrimary text-blue-900 dark:text-white rounded-lg w-min transition-all">
+                    <?= $data[2][0]["total_converted_leads"] ?>
+                </span>
+            </div>
+        </div>
+        <div class="flex items-center shadow-sm rounded-xl px-4 py-4 w-full bg-white dark:bg-background-darkSecondary transition-all">
+            <div class="flex mr-4 h-full items-center">
+                <i class="fas fa-sitemap text-gray-500 dark:text-blueGray-500 w-8 text-2xl transition-all"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-sm md:text-base lg:text-lg text-black dark:text-blueGray-300 transition-all">
+                    Total Leads
+                </span>
+                <span class="my-1 px-2 text-sm lg:text-xl bg-gray-100 dark:bg-background-hoverPrimary text-gray-900 dark:text-white rounded-lg w-min transition-all">
+                    <?= $data[3][0]["total_leads"] ?>
+                </span>
             </div>
         </div>
     </div>
-    <div class="flex flex-col lg:flex-row justify-between px-4 mb-4">
-        <div class="w-full lg:w-1/2 mb-4 lg:mb-0 mr-0 lg:mr-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-4">
+        <div class="mb-4 lg:mb-0 mr-0 lg:mr-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
             <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-3 rounded-tr-xl rounded-tl-xl transition-all">
                 <div class="text-lg font-semibold text-gray-700 dark:text-gray-300 transition-all">
                     New Leads
@@ -82,8 +78,8 @@
             </div>
             <div class="overscroll-contain overflow-auto max-h-64 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-50">
                 <table class="w-full">
-                    <thead class="bg-background-secondary dark:bg-background-hoverPrimary transition-all">
-                        <tr class="border-b border-gray-100 dark:border-border-darkPrimary transition-all">
+                    <thead class="bg-background-secondary dark:bg-background-hoverPrimary border-b border-gray-100 dark:border-border-darkPrimary transition-all">
+                        <tr>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">#</th>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">Phone</th>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">Project</th>
@@ -91,20 +87,22 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($data[4] as $new_lead) : ?>
                         <tr class="border-b last:border-none border-gray-100 dark:border-border-darkPrimary hover:bg-gray-50 dark:hover:bg-background-hoverPrimary cursor-pointer transition-all">
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">1</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">03314641234</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">091 Mall</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">2022-02-31</td>
+                            <td class="px-4 py-2 text-xs text-gray-600 dark:text-white transition-all"><?= $new_lead["lead_id"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $new_lead["lead_client_phone"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $new_lead["project_name"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $new_lead["lead_date"] ?></td>
                         </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="w-full lg:w-1/2 mb-4 lg:mb-0 ml-0 lg:ml-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
+        <div class="mb-4 lg:mb-0 ml-0 lg:ml-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
             <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-3 rounded-tr-xl rounded-tl-xl transition-all">
                 <div class="text-lg font-semibold text-gray-700 dark:text-gray-300 transition-all">
-                    New Leads
+                    Follow Ups
                 </div>
                 <div class="text-lg text-gray-700 dark:text-white transition-all">
                     <i class="fas fa-ellipsis-v text-gray-500 dark:text-gray-300 text-sm cursor-pointer transition-all"></i>
@@ -112,8 +110,8 @@
             </div>
             <div class="overscroll-contain overflow-auto max-h-64 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-50">
                 <table class="w-full">
-                    <thead class="bg-background-secondary dark:bg-background-hoverPrimary transition-all">
-                        <tr class="border-b border-gray-100 dark:border-border-darkPrimary transition-all">
+                    <thead class="bg-background-secondary dark:bg-background-hoverPrimary border-b border-gray-100 dark:border-border-darkPrimary transition-all">
+                        <tr>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">#</th>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">Phone</th>
                             <th class="px-4 py-2 text-left text-xs font-medium tracking-wider uppercase dark:text-gray-400 transition-all">Project</th>
@@ -121,12 +119,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach($data[5] as $pending_lead) : ?>
                         <tr class="border-b last:border-none border-gray-100 dark:border-border-darkPrimary hover:bg-gray-50 dark:hover:bg-background-hoverPrimary cursor-pointer transition-all">
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">1</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">03314641234</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">091 Mall</td>
-                            <td class="px-4 py-2 text-sm dark:text-white transition-all">2022-02-31</td>
+                            <td class="px-4 py-2 text-xs text-gray-600 dark:text-white transition-all"><?= $pending_lead["lead_id"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $pending_lead["lead_client_phone"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $pending_lead["project_name"] ?></td>
+                            <td class="px-4 py-2 text-sm dark:text-white transition-all"><?= $pending_lead["lead_date"] ?></td>
                         </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
             </div>
