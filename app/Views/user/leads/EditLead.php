@@ -14,25 +14,118 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mx-4 my-4">
         <div class="col-span-1 lg:col-span-3">
-            <div class="rounded-xl shadow-sm bg-white dark:bg-background-darkSecondary dark:text-white transition-all">
+            <div class="rounded-xl shadow-sm bg-white dark:bg-background-darkSecondary dark:text-white transition-all mb-4 pb-4">
                 <div class="px-4 py-2 text-md lg:text-lg text-blueGray-600 dark:text-blueGray-400 font-semibold border-b dark:border-border-darkPrimary transition-all">Lead Information</div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-4 md:mx-8 pb-4 my-4">
-                    <div class="text-sm">
+                <div class="grid grid-cols-2 gap-2 mx-4 md:mx-8 mt-4">
+                    <div class="text-xs md:text-sm">
                         <table>
                             <tbody>
-                                <tr>
-                                    <td class="pr-2 text-blueGray-500">Lead Name</td>
-                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="Enter Client Name"></input></td>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Name</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, John Doe"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Title</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, VP Accounting"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Phone</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 02134578910"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Mobile</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 03311231234"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Source</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Facebook"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Industry</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Service Provider"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Revenue</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 850000"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Twitter</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, @john_doe"></input></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="text-sm">
+                    <div class="text-xs md:text-sm">
                         <table>
                             <tbody>
-                                <tr>
-                                    <td class="pr-2 text-blueGray-500">Company</td>
-                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="Enter Client Company"></input></td>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Company</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, ABC LTD"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Email</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, johndoe@example.com"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Fax</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 5551234567"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Website</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, example.com"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Status</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Pending"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Employees</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 100"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Rating</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 1-5"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Skype</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, @john_doe"></input></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-xl shadow-sm bg-white dark:bg-background-darkSecondary dark:text-white transition-all mb-4 pb-4">
+                <div class="px-4 py-2 text-md lg:text-lg text-blueGray-600 dark:text-blueGray-400 font-semibold border-b dark:border-border-darkPrimary transition-all">Address Information</div>
+                <div class="grid grid-cols-2 gap-2 mx-4 md:mx-8 mt-4">
+                    <div class="text-xs md:text-sm">
+                        <table>
+                            <tbody>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Street</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, E11/4, St48A"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">State</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Punjab"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Country</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Pakistan"></input></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-xs md:text-sm">
+                        <table>
+                            <tbody>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">City</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, Islamabad"></input></td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td class="flex items-center pr-4 text-blueGray-500 font-semibold float-right h-10">Zip Code</td>
+                                    <td><input class="focus:outline-none rounded focus:border focus:border-gray-300 px-2 py-1 transition-all" placeholder="e.g, 54000"></input></td>
                                 </tr>
                             </tbody>
                         </table>
