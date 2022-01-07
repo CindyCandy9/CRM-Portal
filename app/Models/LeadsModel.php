@@ -44,7 +44,7 @@ class LeadsModel extends Model {
         
         $lead_id = $this->db->insertID();
         
-        $this->db->query('INSERT INTO lead_assignments (`lead_assignment_lead_id`, `lead_assignment_user_id`) VALUES ("' . $lead_id . '", "' . $this->FetchEmployee_LeastLeads()[0]["user_id"] . '")');
+        $this->db->query('INSERT INTO lead_assignments (`lead_assignment_lead_id`, `lead_assignment_user_id`, `lead_assignment_lead_owner`) VALUES ("' . $lead_id . '", "' . $this->FetchEmployee_LeastLeads()[0]["user_id"] . '", "' . $_SESSION["user_id"] . '")');
 
         if ($this->db->transStatus() === TRUE) {
             $this->db->transCommit();

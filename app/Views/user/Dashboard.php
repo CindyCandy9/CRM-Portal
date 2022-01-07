@@ -68,8 +68,8 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 mx-4">
         <div class="mb-4 lg:mb-0 mr-0 lg:mr-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
-            <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-3 rounded-tr-xl rounded-tl-xl transition-all">
-                <div class="text-lg font-semibold text-gray-700 dark:text-gray-300 transition-all">
+            <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-2 rounded-tr-xl rounded-tl-xl transition-all">
+                <div class="text-lg font-semibold text-blueGray-600 dark:text-gray-300 transition-all">
                     New Leads
                 </div>
                 <div class="text-lg text-gray-700 dark:text-white transition-all">
@@ -100,8 +100,8 @@
             </div>
         </div>
         <div class="mb-4 lg:mb-0 ml-0 lg:ml-2 shadow-sm rounded-xl pb-3 bg-white dark:bg-background-darkSecondary transition-all">
-            <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-3 rounded-tr-xl rounded-tl-xl transition-all">
-                <div class="text-lg font-semibold text-gray-700 dark:text-gray-300 transition-all">
+            <div class="flex justify-between items-center border-b border-gray-100 dark:border-border-darkPrimary px-4 py-2 rounded-tr-xl rounded-tl-xl transition-all">
+                <div class="text-lg font-semibold text-blueGray-600 dark:text-gray-300 transition-all">
                     Follow Ups
                 </div>
                 <div class="text-lg text-gray-700 dark:text-white transition-all">

@@ -36,6 +36,9 @@ $routes->get('/', 'Login::index');
 $routes->add('/admin', 'Admin\Dashboard::Index',['filter' => 'auth']);
 $routes->add('/user', 'User\Dashboard::Index',['filter' => 'auth']);
 
+// User Leads Routes (GET)
+$routes->get('/user/leads/(:num)', 'User\Leads::EditLead/$1',['filter' => 'auth']);
+
 // Administrator Employees Routes (GET)
 $routes->get('/admin/employees', 'Admin\Employees::Index',['filter' => 'auth']);
 $routes->get('/admin/employees/(:num)', 'Admin\Employees::Index/$1',['filter' => 'auth']);
